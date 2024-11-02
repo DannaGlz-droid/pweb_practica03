@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/carita_buscaminas.png" type="image/png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.cdnfonts.com/css/warriot-strange" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/dead-fataly" rel="stylesheet">
+    <title>Buscaminas</title>
+</head>
+<body>
+    
+    <header>
+        <img class="header-img1" src="Img/shadow.png" alt="">
+        <h1>  Buscaminas  </h1>
+        <img class="header-img2" src="Img/shadow.png" alt="">
+    </header>
+
+    <nav class="custom-settings">
+        <label for="select-nvl">Nivel:</label>
+        <select name="nivel" id="nvl" class="nvl-canvas">
+            <option value="Personalizado">Personalizado</option>
+            <option value="Facil">Fácil</option>
+            <option value="Medio Dificil">Medio Difícil</option>
+            <option value="Muy Dificil">Muy Difícil</option>
+            <option value="Hardcore">Hardcore</option>
+            <option value="Leyenda">Leyenda!!</option>
+        </select>
+
+        <label for="rows">Filas:</label>
+        <input type="number" id="rows" value="5" min="5">
+
+        <label for="cols">Columnas:</label>
+        <input type="number" id="cols" value="5" min="5" max="61">
+
+        <label for="mines">Minas:</label>
+        <input type="number" id="mines" value="1" min="5">
+
+        <button id="startGame">Iniciar Juego</button>
+    </nav>
+
+
+    <div class="canvas-container">
+        <div>
+            <div class="icon-canvas"></div>
+            <img id="face" class="img-canvas" src="img/carita_buscaminas.png" alt="">
+        </div>
+        
+        <div class="grid" id="grid"></div>
+    </div>
+
+    <script src="indexen.js"></script>
+</body>
+</html>
